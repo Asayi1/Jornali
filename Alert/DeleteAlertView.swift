@@ -37,7 +37,8 @@ struct DeleteAlertView: View {
                             .foregroundColor(.white)
                             .frame(maxWidth: .infinity)
                             .padding(.vertical, 14)
-                            .background(Color(red: 0.15, green: 0.15, blue: 0.15))
+                            .background(Color(red: 0.12, green: 0.12, blue: 0.12))
+                            .cornerRadius(20)
                             .cornerRadius(12)
                     }
                     

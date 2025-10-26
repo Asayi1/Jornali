@@ -1,3 +1,11 @@
+//
+//  JournalCardView.swift
+//  Jornali
+//
+//  Created by Asail abdulmohsin on 01/05/1447 AH.
+//
+
+
 import SwiftUI
 
 struct JournalCardView: View {
@@ -34,18 +42,22 @@ struct JournalCardView: View {
             HStack(alignment: .top, spacing: 12) {
                 VStack(alignment: .leading, spacing: 8) {
                     Text(journal.title)
-                        .font(.system(size: 20, weight: .semibold))
+                        .font(.system(size: 29, weight: .semibold))
                         .foregroundColor(Color(red: 0.831, green: 0.784, blue: 1.0))
+                        .padding(.top, -4) 
                     
                     Text(journal.date.formatted(date: .numeric, time: .omitted))
-                        .font(.system(size: 10))
+                        .font(.system(size: 16))
                         .foregroundColor(.gray)
+                        .padding(.bottom ,80)
+                
                     
                     Text(journal.content)
-                        .font(.system(size: 14))
-                        .foregroundColor(.gray)
+                        .font(.system(size: 19))
+                        .foregroundColor(.white)
                         .lineLimit(3)
-                        .padding(.top, 4)
+                        .padding(.top, -80) 
+                      
                 }
                 
                 Spacer()
@@ -57,6 +69,8 @@ struct JournalCardView: View {
                 }
             }
             .padding()
+ 
+            .frame(maxWidth: .infinity, minHeight: 200) // 👈 تكبير حجم البطاقة
             .background(
                 ZStack {
                     RoundedRectangle(cornerRadius: 16)

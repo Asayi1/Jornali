@@ -1,3 +1,18 @@
+//
+//  EditorView.swift
+//  Jornali
+//
+//  Created by Asail abdulmohsin on 01/05/1447 AH.
+//
+
+
+//
+//  EditorView.swift
+//  Jornali
+//
+//  Created by Asail abdulmohsin on 01/05/1447 AH.
+//
+
 import SwiftUI
 
 struct EditorView: View {

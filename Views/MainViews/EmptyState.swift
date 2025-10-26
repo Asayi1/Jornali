@@ -29,8 +29,7 @@ struct JournalAppView: View {
         .preferredColorScheme(.dark)
         .sheet(isPresented: $viewModel.isEditing) {
             EditorView(viewModel: viewModel)
-                .presentationBackground(Color.clear)
-        }
+            .presentationBackground(Color.clear)       }
     }
 }
 
