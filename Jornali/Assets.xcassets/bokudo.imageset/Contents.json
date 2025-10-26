@@ -1,15 +1,16 @@
 {
   "images" : [
     {
-      "filename" : "Image.pdf",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "Image.pdf",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
+      "filename" : "bokudo.png",
       "idiom" : "universal",
       "scale" : "3x"
     }
