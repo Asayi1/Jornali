@@ -6,6 +6,7 @@
 //
 
 
+/*
 import SwiftUI
 
 @main
@@ -14,6 +15,19 @@ struct JournalApp: App {
         WindowGroup {
             JournalAppView()
               //
+        }
+    }
+}
+*/
+
+
+import SwiftUI
+
+@main
+struct JournalApp: App {
+    var body: some Scene {
+        WindowGroup {
+            SplashScreenView()  // 👈 Changed from JournalAppView() to SplashScreenView()
         }
     }
 }
